@@ -7,10 +7,10 @@ export default function Home() {
       <Head>
         <title>Montyphyllic Pricing</title>
         <meta name="description" content="Montyphyllic Graduation Photoshoot Pricing" />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </Head>
 
       {/* Header */}
@@ -108,7 +108,6 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full bg-black text-white py-6 mt-12">
-        <p className="text-center">"Hii ni deal noma! Usiwachwe nyuma."</p>
         <p className="text-center mt-2">© 2024 Montyphyllic. All rights reserved.</p>
       </footer>
     </div>

@@ -17,5 +17,26 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lexend', sans-serif;
+  
 }
+/* styles/globals.css */
+
+/* Define Lexend font faces */
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Regular.ttf') format('ttf'),
+       url('/fonts/Lexend-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Bold.ttf') format('ttf'),
+       url('/fonts/Lexend-Bold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+

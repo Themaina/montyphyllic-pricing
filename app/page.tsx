@@ -1,100 +1,115 @@
-import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="bg-gray-50 min-h-screen text-gray-900 font-inter">
+      {/* Head Section */}
+      <Head>
+        <title>Montyphyllic Pricing</title>
+        <meta name="description" content="Montyphyllic Graduation Photoshoot Pricing" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+          rel="stylesheet"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      </Head>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      {/* Header */}
+      <header className="w-full bg-white text-black p-6">
+        <h1 className="text-4xl font-bold text-center tracking-tight">
+          Montyphyllic X Akandy  Studios
+        </h1>
+        <p className="text-center text-black-400 mt-2">
+          Graduation Photoshoot Packages
+        </p>
+      </header>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-8">
+        <section className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+          {/* Basic Package */}
+          <div className="bg-white shadow-xl p-6 rounded-lg border-2 border-black">
+            <h3 className="text-xl font-bold mb-4 text-black">Basic Package</h3>
+            <p className="text-gray-600 mb-6">Perfect for individuals on a budget.</p>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                5 Edited Photos
+              </li>
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                10 Unedited Photos
+              </li>
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                1 Outfit
+              </li>
+            </ul>
+            <p className="text-black font-semibold text-2xl mt-6">1,000 KES</p>
+            <a href="https://forms.gle/3945ejiux5Tx6KVc9" target="_blank" rel="noopener noreferrer">
+                 <button className="mt-6 w-full bg-black text-yellow-400 py-3 rounded-lg text-sm font-medium hover:bg-yellow-500 transition-colors">
+                     Select Package
+                  </button>
+            </a>
+          </div>
+
+          {/* Standard Package */}
+          <div className="bg-white shadow-xl p-6 rounded-lg border-2 border-yellow-400">
+            <h3 className="text-xl font-bold mb-4 text-black">Standard Package</h3>
+            <p className="text-gray-600 mb-6">Best for those who want more variety.</p>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                10 Edited Photos
+              </li>
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                20 Unedited Photos
+              </li>
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                2 Outfits
+              </li>
+            </ul>
+            <p className="text-black font-semibold text-2xl mt-6">2,000 KES</p>
+            <a href="https://forms.gle/3945ejiux5Tx6KVc9" target="_blank" rel="noopener noreferrer">
+                 <button className="mt-6 w-full bg-black text-yellow-400 py-3 rounded-lg text-sm font-medium hover:bg-yellow-500 transition-colors">
+                     Select Package
+                  </button>
+            </a>
+          </div>
+
+          {/* Group Package */}
+          <div className="bg-white shadow-xl p-6 rounded-lg border-2 border-yellow-400">
+            <h3 className="text-xl font-bold mb-4 text-black">Group Package</h3>
+            <p className="text-gray-600 mb-6">Ideal for group memories.</p>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                25 Edited Photos
+              </li>
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                35 Unedited Photos
+              </li>
+              <li className="flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                3 Outfits
+              </li>
+            </ul>
+            <p className="text-black font-semibold text-2xl mt-6">3,500 KES</p>
+            <a href="https://forms.gle/3945ejiux5Tx6KVc9" target="_blank" rel="noopener noreferrer">
+                 <button className="mt-6 w-full bg-black text-yellow-400 py-3 rounded-lg text-sm font-medium hover:bg-yellow-500 transition-colors">
+                     Select Package
+                  </button>
+            </a>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="w-full bg-black text-white py-6 mt-12">
+        <p className="text-center">"Hii ni deal noma! Usiwachwe nyuma."</p>
+        <p className="text-center mt-2">© 2024 Montyphyllic. All rights reserved.</p>
       </footer>
     </div>
   );
